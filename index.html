@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contador de passageiros</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    </head>
+    
+    <body>
+        <h1>Contagem de passageiros</h1>
+        <div class="video-background">
+            <video autoplay muted loop id="video-bg">
+                <source src="apresentacao-onibus-circular (2).mp4" type="video/mp4">
+            </video>
+            <div class="text-container">
+                <form>
+                    <label for="horaInicioPico">Horário de início do pico da linha?</label>
+                    <input type="time" id="horaInicioPico" required />
+                </br>
+            </br>
+            <label for="horaFinalPico">Horário final do pico da linha?</label>
+            <input type="time" id="horaFinalPico" required />
+        </br>
+    </br>
+    <p>Iniciando cameras e sensores.<br>    
+        <video id="webcam" autoplay playsinline></video>
+    </p>Inicie a viagem.</p>
+    <label for="horaAtual">Qual a hora atual?</label>
+    <input type="time" id="horaAtual" required />
+</br>
+</br>
+<label for="sensorEntrada">Alguém entrou?</label>
+<select id="sensorEntrada">
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+</select><br/><br/> 
+<label for="sensorSaida">Alguém saiu?</label>
+<select id="sensorSaida">
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+</select><br/><br/> 
+<label for="viagemEmAndamento">Viagem em andamento?</label>
+<select id="viagemEmAndamento">
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+</select><br/><br/> 
+<input type="button" value="Registrar entrada" onclick="registrarEntrada()"/>
+<br>
+<input type="button" value="    Registrar saida" onclick="registrarSaida()"/>
+</form>
+<h2>Relatório</h2>
+<h3>Movimentação na porta: <span id="contador">0</span></h3>
+<h3>Número de passageiros em tempo real no ônibus: <span id="contagemPessoas">0</span></h3>
+<h3>No horário com maior fluxo de pessoas no ônibus foram registradas <span id="totalPessoas">0</span> pessoas.</h3>
+<h3>Total de pessoas que circularam no horário de pico foi <span id="totalPico">0</span> pessoas.</h3>
+<footer>Desenvolvido por Leonardo Beiger</footer>
+    <script src="script.js"></script>
+    <script src="camera.js"></script>
+</body>
+</html>
+
+

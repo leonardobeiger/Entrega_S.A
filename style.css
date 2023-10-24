@@ -1,0 +1,156 @@
+/*https://fonts.google.com/?preview.size=18*/
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&display=swap');
+
+
+/* Define a altura e largura de todos os elementos HTML para 100% */
+html {
+    height: 100%;
+    width: 100%;
+  }
+ 
+  /* Define a fonte e a cor de fundo para o corpo da página */
+  body {
+      font-family: Arial, sans-serif; /* Define a fonte do texto */
+      /*background-image: url(91df526a261838aba6b8a7af27bc9248.jpg); /* Define a cor de fundo como cinza claro */
+      margin: 0; /* Remove margens */
+      padding: 0; /* Remove preenchimento */
+      
+    
+  }
+ 
+  /* Estilo para os elementos de cabeçalho h1 */
+  h1 {
+     font-family: 'Gabarito', cursive;
+      text-align: center; /* Centraliza o texto horizontalmente */
+      background-color: #001b7b; /* Define a cor de fundo como azul */
+      color: #fff; /* Define a cor do texto como branco */
+      padding: 20px 0; /* Define o espaçamento interno (padding) na parte superior e inferior */
+      margin: 0; /* Remove margens */
+  }
+ 
+  /* Estilo para os elementos de cabeçalho h2 */
+  h2 {
+      background-color: #001b7b; /* Define a cor de fundo como azul */
+      color: #fff; /* Define a cor do texto como branco */
+      padding: 10px; /* Define o espaçamento interno (padding) */
+      margin-top: 0px; /* Define uma margem superior */
+      text-align: center;
+      max-width: auto;
+      margin-bottom: 0%;
+      
+  }
+ 
+  /* Estilo para formulários */
+  form {
+      max-width: 400px; /* Define a largura máxima do formulário */
+      margin: 20px auto; /* Centraliza o formulário horizontalmente na página */
+      padding: 20px; /* Define o espaçamento interno (padding) */
+      background-color: #001b7b; /* Define a cor de fundo como branco */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à caixa do formulário */
+      border-radius: 50px;
+      
+  }
+ 
+  /* Estilo para rótulos de campos de entrada */
+  label {
+      display: block; /* Define como bloco para criar uma nova linha para cada rótulo */
+      margin-top: 10px; /* Define uma margem superior */
+      font-weight: bold; /* Define a fonte como negrito */
+  }
+ 
+  /* Estilo para campos de entrada numérica e seletores */
+  input[type="number"],
+  select {
+      width: 100%; /* Preenche a largura disponível */
+      padding: 8px; /* Define o espaçamento interno (padding) */
+      margin-top: 5px; /* Define uma pequena margem superior */
+      margin-bottom: 15px; /* Define uma margem inferior maior */
+      border: 1px solid #ccc; /* Define uma borda com cor cinza */
+      border-radius: 4px; /* Adiciona cantos arredondados */
+  }
+ 
+  /* Estilo para parágrafos */
+  p {
+      font-weight: bold; /* Define a fonte como negrito */
+      text-align: center;
+  }
+ 
+  /* Estilo para botões de entrada do tipo "button" */
+  input[type="button"] {
+      background-color: #fcfcfc; /* Define a cor de fundo como azul */
+      color: black; /* Define a cor do texto como branco */
+      border-radius: 50px;
+      padding: 15px 150px; /* Define o espaçamento interno (padding) */
+      cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão */    
+      margin: center; /* Centraliza horizontalmente o botão */
+      display: block; /* Faz com que o botão ocupe toda a largura disponível */
+      
+  }
+ 
+  /* Estilo para botões de entrada do tipo "button" ao passar o mouse sobre eles */
+  input[type="button"]:hover {
+      background-color: #696868; /* Altera a cor de fundo quando o mouse passa sobre o botão */
+
+      
+  }
+ 
+  /* Estilo para um elemento com o ID "contagem" */
+  #contagem {
+      font-weight: bold; /* Define a fonte como negrito */
+      font-size: 18px; /* Define o tamanho da fonte */
+  }
+ 
+  /* Estilize uma classe personalizada para centralizar conteúdo */
+.centered-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Estilize uma classe personalizada para centralizar o botão */
+.centered-button {
+    text-align: center;
+}
+
+
+/* Estilize o rodapé */
+footer {
+    background-color: #001b7b; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branca */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 10px; /* Espaçamento interno */
+    /*position: absolute; /* Fixa o rodapé na parte inferior da página */
+    width: 100%; /* Largura total */
+    bottom: 0; /* Coloca o rodapé no fundo da página */
+}
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #ffffff; /* Cor do texto */
+    padding: 0px;
+}
+h3{
+    background-color: white;
+    color: black;
+    margin : 0;
+
+}
+#webcam{
+    width: 100%;
+ }
